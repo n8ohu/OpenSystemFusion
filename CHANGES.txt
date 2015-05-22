@@ -1,0 +1,5 @@
+SystemFusion 20150520
+=========================
+
+2015-5-20
+Basic code layout adjustments for new System Fusion codebase. The ircDDB, Data, Common, LinuxUSB and WindowsUSB folders have been moved into the root of the build tree so that they can be truly shared between sub-projects. Only SystemFusionReflector will be built at this time, and there are currently no Visual Studio Solution files for building on Windows.
