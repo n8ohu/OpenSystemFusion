@@ -264,6 +264,36 @@ void CXReflectorApp::createThread()
 	CXReflectorReflectorHandler::add(reflector);
 	wxLogInfo(wxT("Creating reflector 5 with callsign \"%s\""), reflector.c_str());
 
+	reflector.Truncate(LONG_CALLSIGN_LENGTH - 1U);
+	reflector.Append(wxT("F"));
+	CXReflectorReflectorHandler::add(reflector);
+	wxLogInfo(wxT("Creating reflector 6 with callsign \"%s\""), reflector.c_str());
+
+	reflector.Truncate(LONG_CALLSIGN_LENGTH - 1U);
+	reflector.Append(wxT("G"));
+	CXReflectorReflectorHandler::add(reflector);
+	wxLogInfo(wxT("Creating reflector 7 with callsign \"%s\""), reflector.c_str());
+
+	reflector.Truncate(LONG_CALLSIGN_LENGTH - 1U);
+	reflector.Append(wxT("H"));
+	CXReflectorReflectorHandler::add(reflector);
+	wxLogInfo(wxT("Creating reflector 8 with callsign \"%s\""), reflector.c_str());
+
+	reflector.Truncate(LONG_CALLSIGN_LENGTH - 1U);
+	reflector.Append(wxT("I"));
+	CXReflectorReflectorHandler::add(reflector);
+	wxLogInfo(wxT("Creating reflector 9 with callsign \"%s\""), reflector.c_str());
+
+	reflector.Truncate(LONG_CALLSIGN_LENGTH - 1U);
+	reflector.Append(wxT("J"));
+	CXReflectorReflectorHandler::add(reflector);
+	wxLogInfo(wxT("Creating reflector 10 with callsign \"%s\""), reflector.c_str());
+
+	reflector.Truncate(LONG_CALLSIGN_LENGTH - 1U);
+	reflector.Append(wxT("K"));
+	CXReflectorReflectorHandler::add(reflector);
+	wxLogInfo(wxT("Creating reflector 11 with callsign \"%s\""), reflector.c_str());
+
 	bool dplusEnabled;
 	getDPlus(dplusEnabled);
 	wxLogInfo(wxT("D-Plus enabled set to %d"), dplusEnabled);

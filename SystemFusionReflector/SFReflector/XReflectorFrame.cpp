@@ -173,11 +173,11 @@ void CXReflectorFrame::onUpdates(wxCommandEvent& event)
 void CXReflectorFrame::onAbout(wxCommandEvent& event)
 {
 	wxAboutDialogInfo info;
-	info.AddDeveloper(wxT("Jonathan Naylor, G4KLX"));
+	info.AddDeveloper(wxT("Jonathan Naylor, G4KLX and Matthew Pitts, N8OHU"));
 	info.SetCopyright(wxT("(C) 2011-2013 using GPL v2 or later"));
 	info.SetName(APPLICATION_NAME);
 	info.SetVersion(VERSION);
-	info.SetDescription(_("This program allows an Internet connected computer \nto become a DExtra and D-Plus Reflector."));
+	info.SetDescription(_("This program allows an Internet connected computer \nto become a Yaesu System Fusion DExtra Reflector."));
 
 	::wxAboutBox(info);
 }
